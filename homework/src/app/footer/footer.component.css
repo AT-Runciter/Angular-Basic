@@ -1,0 +1,45 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-info,
+  .footer-social {
+    width: calc(50% - 10px);
+  }
+  
+  .footer-info p,
+  .footer-social p {
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li:last-child {
+    margin-bottom: 0;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  .footer-copyright {
+    margin-top: 20px;
+  }
+  
