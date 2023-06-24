@@ -5,7 +5,6 @@ These tasks go from the simplest to the most complex - from the first steps to c
 
 homework - 
 https://angular-basic-test-homework.netlify.app/
-![homework - angular basic test](https://angular-basic-test-homework.netlify.app/)
 
 What's going on here: my first attempts. The assignments were as follows:
 1. Delete the markup in the app.component.html file and create a paragraph with any content. Add a first-level heading with any text in the index.html file.
