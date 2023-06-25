@@ -12,4 +12,10 @@ What's going on here: my first attempts. The assignments were as follows:
 3. Create several components through the angular cli by naming them: header, content, footer. Give three components the markup you want and display these components on the visual part of the application page.
 4. Write down the general styles that will be set for all components and the styles that will be set for html elements only for a specific component.
 
+homework02r (events and data binding) - 
+https://angular-basic-homework02r.netlify.app/
 
+What has been done: a project with simple routing has been created, with three routes. The assignments were as follows:
+1. Add an image tag and pass the local or absolute path to the image using data binding.
+2. Create a slider without animation. Place an image and two buttons "Back" and "Forward" below it. In the component, create an array with paths (relative or absolute) to different images. Change the path to the image by substituting the values of the array when you press the keys.
+3. Implement the ability to switch slides using the keyboard.
