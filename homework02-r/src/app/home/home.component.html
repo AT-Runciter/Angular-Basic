@@ -1,0 +1,19 @@
+<div class="home-container">
+
+    <div class="about__img-container">
+
+        <!-- <img [src]="images[currentImageIndex]" alt="nikolai" style="width: 600px; height: 200px;"> -->
+
+        <img id="myImage" src="{{images[currentImageIndex]}}" alt="nikolai" style="width: 600px; height: 200px;">
+
+        <button class="button-prev" (click)="prevImage()">Назад</button>
+        <button class="button-next" (click)="nextImage()">Вперед</button>
+    </div>
+
+    <h1>Welcome to our website</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum, mauris eu commodo aliquet, urna quam
+        ultricies odio, nec fringilla mauris turpis vel elit.</p>
+
+    <a href="#" class="button">Learn More</a>
+</div>
