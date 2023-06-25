@@ -20,7 +20,7 @@ What has been done: a project with simple routing has been created, with three r
 2. Create a slider without animation. Place an image and two buttons "Back" and "Forward" below it. In the component, create an array with paths (relative or absolute) to different images. Change the path to the image by substituting the values of the array when you press the keys.
 3. Implement the ability to switch slides using the keyboard.
 
-homework03 (directives and pipe)
+homework03 (directives and pipe) - 
 https://angular-basic-homework03.netlify.app/
 
 Three components were retained in this task, but they were not used in the assignment. The task itself was as follows:
