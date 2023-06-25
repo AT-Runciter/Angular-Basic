@@ -1,0 +1,11 @@
+<h3>Завдання 2</h3>
+<p>Створити чотири теги input з типом радіо. Кожен прапор відповідає за свій колір, який повинен задаватися на окремий елемент у вигляді тла. Наприклад: є параграф і з нього розміщені інпути, при натисканні перший - колір параграфа стає синім, другого - червоним, третій - зеленим, четвертий - золотим.</p>
+
+<p [ngStyle]="{ 'background-color': bgColor }">This is a paragraph</p>
+
+<input type="radio" name="color" value="blue" (click)="changeColor('blue')"> Blue
+<input type="radio" name="color" value="red" (click)="changeColor('red')"> Red
+<input type="radio" name="color" value="green" (click)="changeColor('green')"> Green
+<input type="radio" name="color" value="gold" (click)="changeColor('gold')"> Gold
+
+<hr>

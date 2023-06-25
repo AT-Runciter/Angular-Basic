@@ -1,0 +1,41 @@
+p {
+    padding: 20px;
+    margin: 0;
+  }
+
+  h3 {
+    padding-left: 40px
+}
+  
+button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: yellow;
+    color: black;
+    border: 2px solid gray;
+  }
+  
+  button:active {
+    background-color: red;
+  }
+  
+  button:hover::before {
+    content: "Хочеш видалити?";
+  }
+  
+  button:active::before {
+    content: "Видали мене!";
+  }
+  
+ 

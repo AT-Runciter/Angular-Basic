@@ -1,0 +1,42 @@
+p {
+    padding: 20px;
+    margin: 0;
+}
+
+h3 {
+    padding-left: 40px
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list li {
+    background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out;
+  }
+  
+  .list li:hover {
+    font-size: 18px;
+  }
+  
+  .last-clicked {
+    margin-top: 20px;
+  }
+  
+  .last-clicked h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .last-clicked p {
+    font-size: 16px;
+  }
+
+  
+  

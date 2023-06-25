@@ -1,0 +1,14 @@
+<h3>Завдання 1</h3>
+<p>Створіть масив з рядками тексту та виведіть зміст масиву у шаблон вигляді списку (ol або ul). Додайте на кожен пункт обробник, який при натисканні в окремому елементі у шаблоні відображатиме контент останнього натиснутого списку.</p>
+<ul class="list">
+  <li *ngFor="let item of myArray" (click)="displayContent(item)">{{ item }}</li>
+</ul>
+
+<div *ngIf="lastClickedItem" class="last-clicked">
+  <h3>Last clicked item:</h3>
+  <p>{{ lastClickedItem }}</p>
+</div>
+
+<hr>
+
+
