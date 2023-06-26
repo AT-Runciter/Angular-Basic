@@ -30,7 +30,7 @@ Three components were retained in this task, but they were not used in the assig
 4. Create any html element(s) and set the logic so that when you click on it, it is removed from the DOM tree.
 
 homework04 (angular modules) - 
-https://angular-basic-homework04.netlify.app/home
+https://angular-basic-homework04.netlify.app/
 
 This task is my favourite) What is done here:
 1. Create two modules named: clothing and baby products.
