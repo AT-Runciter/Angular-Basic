@@ -1,0 +1,41 @@
+ nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    padding: 10px;
+  }
+  
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    width: 120px;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  nav a:hover {
+    border-color: #333;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li + li {
+    margin-left: 20px;
+  }
+  
