@@ -19,3 +19,12 @@ What has been done: a project with simple routing has been created, with three r
 1. Add an image tag and pass the local or absolute path to the image using data binding.
 2. Create a slider without animation. Place an image and two buttons "Back" and "Forward" below it. In the component, create an array with paths (relative or absolute) to different images. Change the path to the image by substituting the values of the array when you press the keys.
 3. Implement the ability to switch slides using the keyboard.
+
+homework03 (directives and pipe) - 
+https://angular-basic-homework03.netlify.app/
+
+Three components were retained in this task, but they were not used in the assignment. The task itself was as follows:
+1. Create an array of text strings and print the contents of the array to a list template (ol or ul). Add a handler for each item that, when clicked on a separate element in the template, will display the content of the last clicked list.
+2. Create four input tags of radio type. Each flag is responsible for its own colour, which should be set to a separate element as a background. For example: there is a paragraph and inputs from it, when you click the first one, the colour of the paragraph turns blue, the second one - red, the third - green, the fourth - yellow.
+3. Create an example where you use all the existing built-in Angular pipelines.
+4. Create any html element(s) and set the logic so that when you click on it, it is removed from the DOM tree.
