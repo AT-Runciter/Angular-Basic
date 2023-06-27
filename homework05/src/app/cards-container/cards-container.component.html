@@ -1,0 +1,18 @@
+<p>cards-container works!</p>
+
+<div class="cards-container">
+  <div *ngFor="let product of products">
+    <div class="product">
+      <h2>{{product.name}}</h2>
+      <p>PRICE: {{product.price}}$</p>
+      <button (click)="expandCard(product)" class="button">Ознайомитись</button>
+      <button (click)="discountProduct(product)" class="button">Хочу знижку</button>
+    </div>
+    <app-card-block [product]="product" [expanded]="expandedProduct === product">
+      <ng-template #colorTemplate>
+        <b>{{product.color}}</b>
+      </ng-template>
+    </app-card-block>
+  </div>
+</div>
+

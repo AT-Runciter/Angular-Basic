@@ -1,0 +1,21 @@
+<p>дочірній list-item works!</p> 
+
+<div>
+    <h3 style="color:blueviolet">дочірній компонент list-item (за допомогою input)</h3>
+    <ul>
+        <li style="color:blueviolet" *ngFor="let item of items; let i = index">{{ item }} {{i}}</li>
+    </ul>
+</div>
+
+<div>
+    <h3 style="color:green">дочірній компонент list-item (за допомогою ng-content)</h3>
+    <ul>
+        <ng-content></ng-content>
+    </ul>
+</div>
+
+<!--
+  Компонент list-item має два шаблони. 
+  Один використовує *ngFor для відображення пунктів списку з масиву items, який отримується через @Input. 
+  Інший використовує ng-content для прийому та відображення елементів списку, які передаються через ng-content в шаблоні батьківського компонента unordered-list.
+  -->

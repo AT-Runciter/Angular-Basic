@@ -1,0 +1,21 @@
+<p>батьківський unordered-list works!</p> 
+
+
+    <h3 style="color: red">батьківський компонент unordered-list (за допомогою input)</h3>
+    <app-list-item [items]="items">{{items}}</app-list-item>
+
+
+<div>
+    <h3 style="color: pink">батьківський компонент unordered-list (за допомогою ng-content)</h3>
+    
+      <li>item1 - Lorem ipsum dolor sit</li>
+      <li>item2 - Lorem ipsum dolor sit</li>
+      <li>item3 - Lorem ipsum dolor sit</li>
+    
+  </div> 
+  
+<!--
+    unordered-list.component.html має дві частини: 
+    одна використовує input для передачі даних до дочірнього компонента, 
+    інша використовує ng-content для передачі статичних даних.
+-->

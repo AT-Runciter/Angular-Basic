@@ -1,0 +1,14 @@
+<p>card-block works!</p>
+
+<div *ngIf="expanded" class="product-details" [style.backgroundColor]="product.color">
+  <div class="card-block">
+    <h2>{{product.name}}</h2>
+    <p>PRICE: {{product.price}}$</p>
+    <p>DESCRIPTION: {{product.description}}</p>
+    <button (click)="collapseCard()">Згорнути</button>
+    <ng-template [ngTemplateOutlet]="colorTemplate" [ngTemplateOutletContext]="{ color: product.color }"></ng-template>
+  </div>
+</div>
+
+
+
