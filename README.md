@@ -37,3 +37,24 @@ This task is my favourite) What is done here:
 2. Create the modules (as specified in the task above) by specifying them in the imports array of the AppModule module. Create components and bind them to the appropriate module, for example: women's clothing, men's clothing, children's clothing, toys, baby food, school, etc. as desired. In the files app.component.html and app-routing.module.ts, write everything you need for the correct operation of routing and the ability to navigate between pages by links. (AppModule in the declarations array should not contain anything other than AppComponent).
 3. For each module, create an index.ts file and specify "exports * from 'component path' " and correct the import in other files by specifying the location of index.ts.
 4. Create additional components for each section, displaying them like tabs (site tabs) and filling them with headings with a name, for example: women's clothing - dresses, jeans, sweaters, etc. Add content and styles to these components at your discretion. 
+
+homework05 (angular components) - 
+https://angular-basic-homework05.netlify.app/
+
+1. Create cards-container and card-block components. In the cards-container component, create an array of products by type:
+products = [ {id: 1, name: ‘product 1’, price: 110, description: ‘product1 text description’},
+{id: 2, name: 'product 2', price: 120, description: 'product2 text description'},
+{id: 3, name: 'product 3', price: 130, description: 'product3 text description'}, ],
+with your content and write the <div class="product"></div> element in the template
+under it the output of child components. Transfer and display data in the card-block without a description field, add a "Read" button. Implement the functionality so that when you click the button, data is transferred to the parent component, displaying all product information in
+<div class="product"></div>. Write the markup and styles at your discretion.
+2. Add the "I want a discount" button above the task markup above. After clicking the button, the child components should display prices 15 times less than the initial price of the product, without changing the value of the price property. In the console, output an array of references to child components for inspection.
+3. In the products array, create a new color property specifying the different color values as strings.
+In the content part of the card-block, pass the "b" tag, substituting the value of this property.
+<app-card-block *ngFor="let product of products">
+<b>{{product.color}}</b>
+</app-card-block>
+Use the ng-content tag in the child component, get a reference to the "b" tag, and use a hook (the component's lifecycle method) to add the element's background with the color specified in it.
+4. Create the unordered-list and list-item components. The unordered-list task will display the list items with text. The data is in the form of an array of lines in the parent component (appunordered-list). The list-item child component displays the data received from the parent in its template. Implement in two ways, through input and ng-content.
+
+
