@@ -28,3 +28,12 @@ Three components were retained in this task, but they were not used in the assig
 2. Create four input tags of radio type. Each flag is responsible for its own colour, which should be set to a separate element as a background. For example: there is a paragraph and inputs from it, when you click the first one, the colour of the paragraph turns blue, the second one - red, the third - green, the fourth - yellow.
 3. Create an example where you use all the existing built-in Angular pipelines.
 4. Create any html element(s) and set the logic so that when you click on it, it is removed from the DOM tree.
+
+homework04 (angular modules) - 
+https://angular-basic-homework04.netlify.app/
+
+This task is my favourite) What is done here:
+1. Create two modules named: clothing and baby products.
+2. Create the modules (as specified in the task above) by specifying them in the imports array of the AppModule module. Create components and bind them to the appropriate module, for example: women's clothing, men's clothing, children's clothing, toys, baby food, school, etc. as desired. In the files app.component.html and app-routing.module.ts, write everything you need for the correct operation of routing and the ability to navigate between pages by links. (AppModule in the declarations array should not contain anything other than AppComponent).
+3. For each module, create an index.ts file and specify "exports * from 'component path' " and correct the import in other files by specifying the location of index.ts.
+4. Create additional components for each section, displaying them like tabs (site tabs) and filling them with headings with a name, for example: women's clothing - dresses, jeans, sweaters, etc. Add content and styles to these components at your discretion. 
