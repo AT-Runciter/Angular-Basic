@@ -47,15 +47,13 @@ products = [ {id: 1, name: ‘product 1’, price: 110, description: ‘product1
 {id: 3, name: 'product 3', price: 130, description: 'product3 text description'}, ],  
 with your content and write the <div class="product"></div> element in the template under it the output of child components. Transfer and display data in the card-block without a description field, add a "Read" button. Implement the functionality so that when you click the button, data is transferred to the parent component, displaying all product information in <div class="product"></div>. Write the markup and styles at your discretion.  
 2. Add the "I want a discount" button above the task markup above. After clicking the button, the child components should display prices 15 times less than the initial price of the product, without changing the value of the price property. In the console, output an array of references to child components for inspection.  
-3. In the products array, create a new color property specifying the different color values as strings.  
-In the content part of the card-block, pass the "b" tag, substituting the value of this property.  
-<app-card-block *ngFor="let product of products">  
-<b>{{product.color}}</b>  
-</app-card-block>  
+3. In the products array, create a new color property specifying the different color values as strings. In the content part of the card-block, pass the "b" tag, substituting the value of this property.  
+<app-card-block *ngFor="let product of products"> <b>{{product.color}}</b> </app-card-block>.  
 Use the ng-content tag in the child component, get a reference to the "b" tag, and use a hook (the component's lifecycle method) to add the element's background with the color specified in it.  
-4. Create the unordered-list and list-item components. The unordered-list task will display the list items with text. The data is in the form of an array of lines in the parent component (appunordered-list). The list-item child component displays the data received from the parent in its template. Implement in two ways, through input and ng-content.  
+4. Create the unordered-list and list-item components. The unordered-list task will display the list items with text. The data is in the form of an array of lines in the parent component (appunordered-list). The list-item child component displays the data received from the parent in its template. Implement in two ways, through input and ng-content.
 
-homework06 (the basics of services and their role in the application) -   
+    
+homework06 (the basics of services and their role in the application) -     
 https://angular-basic-homework06.netlify.app/  
   
 1. Create and register a service by connecting it to a component. Create an array of strings with the names of products and a method that returns a reference to the array. Display the data in the component as a list.  
