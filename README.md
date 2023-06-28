@@ -61,11 +61,8 @@ homework06 (the basics of services and their role in the application) -
 https://angular-basic-homework06.netlify.app/
 
 1. Create and register a service by connecting it to a component. Create an array of strings with the names of products and a method that returns a reference to the array. Display the data in the component as a list.
-
 2. Add a field to the markup in the application, adding the filter functionality to the task above. By writing in the field the name of the product in the list, only products with this name are displayed.
-
 3. Create a service that contains an array of integer values, add a method that sorts the array in ascending and descending order, and returns the maximum number from the array. Implement the data retrieval and output in a component.
-
 4. Implement the functionality of the tasks above by filling the array with objects that describe the product, for example:
 products = [ {id: 1, name: 'product 1', price: 110, description: 'product1 text description'}
 {id: 2, name: 'product 2', price: 120, description: 'product2 text description'}
