@@ -1,0 +1,33 @@
+<p>task04 works! /реалізація пошуку без кнопки, потрібно почати щось вводити, щоб побачити результат</p>
+
+<div class="product-list-container">
+    <h2>Product List</h2>
+  
+    <!-- Фільтр товарів -->
+    <div class="filter-container">
+      <input type="text" [(ngModel)]="filterText" (input)="filterProducts()" placeholder="Filter by product name">
+    </div>
+  
+    <!-- Список відфільтрованих товарів -->
+    <ul class="product-list" *ngIf="filteredProducts.length > 0; else noResults">
+      <li *ngFor="let product of filteredProducts">
+        {{ product.name }} - ${{ product.price }}
+      </li>
+    </ul>
+  
+    <!-- Повідомлення про відсутність результатів -->
+    <ng-template #noResults>
+      <p class="no-results-message">No results found.</p>
+    </ng-template>
+  
+    <!-- Кнопки сортування -->
+    <div class="sorting-buttons">
+      <button (click)="sortAscending()">Sort Ascending</button>
+      <button (click)="sortDescending()">Sort Descending</button>
+    </div>
+  
+    <!-- Виведення максимальної ціни -->
+    <p class="max-price">Max Price: {{ getMaxPrice() }}</p>
+  </div>
+  
+

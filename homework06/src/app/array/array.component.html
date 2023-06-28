@@ -1,0 +1,15 @@
+<p>TASK 3 - array works! /треба натиснути будь-які кнопки, щоб з'явився масив/</p>
+
+<div class="container">
+    <div class="task-container">
+      <h2 class="title">Sorted Array</h2>
+      <ul class="array-list">
+        <li *ngFor="let num of sortedArray" class="array-item">{{ num }}</li>
+      </ul>
+      <button class="btn" (click)="sortArrayAscending()">Sort Ascending</button>
+      <button class="btn" (click)="sortArrayDescending()">Sort Descending</button>
+      <button class="btn" (click)="getMaxNumber()">Get Max Number</button>
+      <p class="max-number">Max Number: {{ maxNumber }}</p>
+    </div>
+  </div>
+  

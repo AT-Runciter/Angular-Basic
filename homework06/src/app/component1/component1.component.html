@@ -1,0 +1,12 @@
+<p>TASK 1-2 - component1 works! /реалізація пошуку через кнопку "шукати" та при натисканні enter без залежності від регістру/</p>
+
+<div class="search-container">
+    <div class="input-container">
+      <input type="text" [(ngModel)]="filterText" placeholder="Введіть назву товару" (keyup.enter)="updateFilteredProducts()">
+      <button (click)="updateFilteredProducts()">Шукати</button>
+    </div>
+    <ul class="product-list">
+      <li *ngFor="let product of filteredProducts">{{ product }}</li>
+    </ul>
+  </div>
+  
