@@ -33,12 +33,12 @@ homework04 (angular modules) -
 https://angular-basic-homework04.netlify.app/
 
 This task is my favourite) What is done here:
-1. Create two modules named: clothing and baby products.
-2. Create the modules (as specified in the task above) by specifying them in the imports array of the AppModule module. Create components and bind them to the appropriate module, for example: women's clothing, men's clothing, children's clothing, toys, baby food, school, etc. as desired. In the files app.component.html and app-routing.module.ts, write everything you need for the correct operation of routing and the ability to navigate between pages by links. (AppModule in the declarations array should not contain anything other than AppComponent).
-3. For each module, create an index.ts file and specify "exports * from 'component path' " and correct the import in other files by specifying the location of index.ts.
+1. Create two modules named: clothing and baby products.  
+2. Create the modules (as specified in the task above) by specifying them in the imports array of the AppModule module. Create components and bind them to the appropriate module, for example: women's clothing, men's clothing, children's clothing, toys, baby food, school, etc. as desired. In the files app.component.html and app-routing.module.ts, write everything you need for the correct operation of routing and the ability to navigate between pages by links. (AppModule in the declarations array should not contain anything other than AppComponent).  
+3. For each module, create an index.ts file and specify "exports * from 'component path' " and correct the import in other files by specifying the location of index.ts.  
 4. Create additional components for each section, displaying them like tabs (site tabs) and filling them with headings with a name, for example: women's clothing - dresses, jeans, sweaters, etc. Add content and styles to these components at your discretion. 
-
-homework05 (angular components) - 
+  
+homework05 (angular components) -   
 https://angular-basic-homework05.netlify.app/  
   
 1. Create cards-container and card-block components. In the cards-container component, create an array of products by type:  
