@@ -1,0 +1,23 @@
+<p>exercise-list works!</p>
+
+<ul class="exercise-list">
+    <li *ngFor="let exercise of exercises" class="exercise-item">
+      <span class="exercise-details">{{ exercise.name }} ({{ exercise.category }})</span>
+  
+      <button class="delete-button" (click)="deleteExercise(exercise.id)">Видалити</button>
+    </li>
+  </ul>
+  
+  <h2>Додати нову вправу</h2>
+  
+  <form class="add-exercise-form" (submit)="addExercise(name.value, category.value)">
+    <input class="input-field" placeholder="Назва вправи" #name required>
+    <input class="input-field" placeholder="Категорія" #category required>
+    <button class="add-button" type="submit">Додати</button>
+  </form>
+  
+  <p class="counter">Counter: {{ counter }}</p>
+  
+  <button class="start-button" (click)="startCounter()" [disabled]="isRunning">Start</button>
+  <button class="stop-button" (click)="stopCounter()" [disabled]="!isRunning">Stop</button>
+  

@@ -1,0 +1,80 @@
+.exercise-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exercise-item {
+    margin-bottom: 10px;
+  }
+  
+  .exercise-details {
+    font-weight: bold;
+  }
+  
+  .delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  
+  .add-exercise-form {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    margin-right: 10px;
+  }
+  
+  .add-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .counter {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .start-button, .stop-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .start-button[disabled], .stop-button[disabled] {
+    background-color: lightgray;
+    cursor: not-allowed;
+  
+  }
+  
+  .delete-button:hover {
+    background-color: darkred;
+  }
+  
+  .add-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .start-button:hover {
+    background-color: darkblue;
+  }
+  
+  .start-button {
+    margin-right: 5px;
+  }
+  
+  .stop-button {
+    margin-left: 5px;
+  }
