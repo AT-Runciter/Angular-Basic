@@ -1,0 +1,40 @@
+<p>task03 works!</p>
+
+<p>Реалізуйте через FormGroup та FormBuilder. Додати форму input type=”checkbox”. Кнопка повинна бути активною лише при правильно заповненій формі та checkbox у вибраному стані. Додайте до форми не обов'язкові до заповнення поля Ваші захоплення, використовуючи FormArray з можливістю створювати їх. Висновок сформованого об'єкта форми відобразіть.</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+    <div class="form-field">
+      <label>Email</label>
+      <input type="text" formControlName="email" class="input-field">
+      <span *ngIf="form.get('email')?.errors?.['required']">Поле обов'язкове</span>
+      <span *ngIf="form.get('email')?.errors?.['email']">Некоректний формат E-mail</span>
+    </div>
+  
+    <div class="form-field">
+      <label>Password</label>
+      <input type="password" formControlName="password" class="input-field">
+      <span *ngIf="form.get('password')?.errors?.['required']">Поле обов'язкове</span>
+    </div>
+  
+    <div class="form-field checkbox-field">
+      <label>Checkbox</label>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" formControlName="checkbox" class="checkbox-input">
+      </div>
+      <span *ngIf="form.get('checkbox')?.errors?.['requiredTrue']">Checkbox повинен бути обраний</span>
+    </div>
+  
+    <div formArrayName="hobbies" class="form-field">
+      <div *ngFor="let hobbyControl of hobbyControls; let i = index" class="hobby-field">
+        <input type="text" [formControl]="hobbyControl" class="input-field">
+        <button type="button" (click)="removeHobby(i)" class="remove-button">Remove</button>
+      </div>
+      <button type="button" (click)="addHobby()" class="add-button">Add Hobby</button>
+    </div>
+  
+    <button type="submit" [disabled]="!form.valid" class="submit-button">Надіслати</button>
+  </form>
+  
+  
+  
+  

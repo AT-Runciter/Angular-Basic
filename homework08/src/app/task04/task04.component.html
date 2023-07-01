@@ -1,0 +1,52 @@
+<p>task04 works!</p>
+
+<p>Додайте формі відображення повідомлень помилок під час її заповнення. Після надсилання даних форма повинна автоматично очищатися в початковий стан.</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="my-form">
+    <div>
+      <label>Email</label>
+      <input type="email" formControlName="email" class="form-control">
+      <div *ngIf="form.get('email')?.touched && form.get('email')?.hasError('email')" class="error-message">
+        Неправильний формат електронної пошти
+      </div>
+      <div *ngIf="isEmailInvalid()" class="error-message">
+        {{ emailErrorMessage }}
+      </div>
+    </div>
+  
+    <div>
+      <label>Password</label>
+      <input type="password" formControlName="password" class="form-control">
+      <div *ngIf="form.get('password')?.touched && form.get('password')?.hasError('minlength')" class="error-message">
+        Пароль має містити щонайменше 8 символів
+      </div>
+      <div *ngIf="isPasswordInvalid()" class="error-message">
+        {{ passwordErrorMessage }}
+      </div>
+    </div>
+  
+    <div>
+      <label>Checkbox</label>
+      <input type="checkbox" formControlName="checkbox" class="form-checkbox">
+    </div>
+  
+    <div formArrayName="hobbies">
+      <div *ngFor="let hobbyControl of hobbies.controls; let i = index" class="hobby-container">
+        <input type="text" [formControlName]="i" class="form-control">
+        <button type="button" (click)="removeHobby(i)" class="remove-button">Remove</button>
+      </div>
+      <button type="button" (click)="addHobby()" class="add-button">Add Hobby</button>
+    </div>
+  
+    <button type="submit" [disabled]="!form.valid || !form.value.checkbox" class="submit-button">Надіслати</button>
+  
+    <div *ngIf="form.dirty && form.invalid" class="form-errors">
+      <div *ngIf="form.get('checkbox')?.invalid" class="error-message">Checkbox повинен бути обраний</div>
+      <div *ngFor="let control of hobbies.controls; let i = index" class="error-message">
+        <div *ngIf="control.invalid">Поле захоплення {{ i + 1 }} є обов'язковим</div>
+      </div>
+    </div>
+  </form>
+  
+  
+  

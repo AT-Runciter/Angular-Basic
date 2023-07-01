@@ -1,0 +1,25 @@
+<p>task02 works!</p>
+
+<p>Створіть форму за завданням, описаним вище, використовуючи реактивні форми. Додайте полям валідацію та відповідні стилі, що відображають їхній стан.</p>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+    <div class="form-group">
+        <label for="task02-email">Електронна пошта</label>
+        <input type="text" id="task02-email" formControlName="email" class="form-control">
+
+        <div *ngIf="isEmailInvalidAndTouched()" class="error-message" id="emailError">
+            <span *ngIf="email?.errors?.['required']">Поле обов'язкове</span>
+            <span *ngIf="isEmailInvalidFormat()">Некоректний формат електронної пошти</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="task02-password">Пароль</label>
+        <input type="password" id="task02-password" formControlName="password" class="form-control">
+        <div *ngIf="isPasswordInvalidAndTouched()" class="error-message">
+            <span *ngIf="password?.errors?.['required']">Поле обов'язкове</span>
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="loginForm.invalid" class="btn-submit">Надіслати</button>
+</form>

@@ -1,0 +1,16 @@
+<p>task01 works!</p>
+
+<p>Створіть форму з полями E-mail, пароль та кнопка «Надіслати». Використовуйте двосторонню прив'язку до полів. Після натискання «Надіслати» виведіть у шаблоні через пайп json або console.log() об'єкт з ключами email і password зі значеннями, введеними з форми.</p>
+
+<form class="login-form">
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" required>
+    </div>
+    <button class="submit-button" type="button" (click)="onSubmit()">Надіслати</button>
+  </form>
+  

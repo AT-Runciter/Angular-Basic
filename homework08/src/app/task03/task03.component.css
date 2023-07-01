@@ -1,0 +1,160 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffcccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkbox-input {
+    margin-right: 5px;
+  }
+  
+  .input-field {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+  }
+  
+  .hobby-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .remove-button,
+  .add-button,
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-button:hover,
+  .add-button:hover,
+  .submit-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .add-button {
+    margin-top: 10px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffcccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkbox-input {
+    margin-right: 5px;
+  }
+  
+  .input-field {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+  }
+  
+  .hobby-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .remove-button,
+  .add-button,
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-button:hover,
+  .add-button:hover,
+  .submit-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .add-button {
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+  }
+  
+
+  .add-button,
+  .submit-button {
+    display: inline-block;
+  }
+  
+  .form-field {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hobby-field {
+    justify-content: space-between;
+    /*width: 100%;*/
+  }
+  
+  .remove-button {
+    margin-left: 10px;
+  }
+  
