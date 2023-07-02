@@ -64,3 +64,10 @@ products = [ {id: 1, name: 'product 1', price: 110, description: 'product1 text 
 {id: 2, name: 'product 2', price: 120, description: 'product2 text description'}  
 {id: 3, name: 'product 3', price: 130, description: 'product3 text description'}, ];  
 Use markup at your own discretion, prompt the user when nothing is found according to the filter criteria.  
+
+homework07 (introduction to HttpClient and RxJs)
+
+1. Create a component and a service to display the downloaded data from https://jsonplaceholder.typicode.com/albums. In the service, connect the HttpClient and make a GET request. In the component, display the information in the template and through console.log();
+2. Create a separate file album.ts. In it, register the Album class with instances of the "id" and "title" properties. Add the pipe method to the request in the task service above. Use the map function of the RxJs library and convert the data received from the server into an array of Ablum objects that do not have the "userId" property compared to the server array. Print the array to console.log() before the conversion.
+3. Step by step, implement the get, post, put delete queries in the application on the topic "fitness exercises done", having previously installed and connected the InMemoryWebApiModule plugin (remember that requests to remote servers will not work with the plugin connected).
+4. Use the interval function of the RxJs library in the component, displaying the work counter. Implement the start on the "Start" button and stop on the "Stop" button.
