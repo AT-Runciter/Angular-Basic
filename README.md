@@ -71,3 +71,10 @@ homework07 (introduction to HttpClient and RxJs)
 2. Create a separate file album.ts. In it, register the Album class with instances of the "id" and "title" properties. Add the pipe method to the request in the task service above. Use the map function of the RxJs library and convert the data received from the server into an array of Ablum objects that do not have the "userId" property compared to the server array. Print the array to console.log() before the conversion.
 3. Step by step, implement the get, post, put delete queries in the application on the topic "fitness exercises done", having previously installed and connected the InMemoryWebApiModule plugin (remember that requests to remote servers will not work with the plugin connected).
 4. Use the interval function of the RxJs library in the component, displaying the work counter. Implement the start on the "Start" button and stop on the "Stop" button.
+
+homework08 (forms)
+
+1. Create a form with the E-mail, password, and Submit button fields. Use two-way binding to the fields. After clicking "Submit", output an object with the email and password keys with the values entered from the form in the template via json or console.log() pipeline.
+2. Create a form according to the task described above using reactive forms. Add validation and appropriate styles to the fields to reflect their state.
+3. Implement using FormGroup and FormBuilder. Add a <input type="checkbox"> form. The button should be active only when the form is filled in correctly and the checkbox is in the selected state. Add optional fields to the form for your hobbies using the FormArray with the ability to create them. Display the output of the generated form object.
+4. Add to the form the display of error messages during its filling. After submitting the data, the form should be automatically cleared to its initial state.
