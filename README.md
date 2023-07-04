@@ -78,3 +78,10 @@ homework08 (forms)
 2. Create a form according to the task described above using reactive forms. Add validation and appropriate styles to the fields to reflect their state.
 3. Implement using FormGroup and FormBuilder. Add a <input type="checkbox"> form. The button should be active only when the form is filled in correctly and the checkbox is in the selected state. Add optional fields to the form for your hobbies using the FormArray with the ability to create them. Display the output of the generated form object.
 4. Add to the form the display of error messages during its filling. After submitting the data, the form should be automatically cleared to its initial state.
+
+homework09 (routing)
+
+1. Create two working routes in which the routes array in app.routing-module.ts, which is passed to RouterModule.forRoot, is empty, use additional modules.
+2. Connect lazy boot to one of the routes created in the task above. You can edit the route settings if necessary.
+3. Create a site interface, for example, a list of products with a description of your choice, for which create a product filter functionality (displaying only those that match the filter criteria) using the route parameters. For example: the products are phone cases and each has its own colour and with the help of <input type="radio"> the user chooses which colour he is interested in.
+4. Create a 'login' route that will contain login and password fields, when entered, the login: Denis, password: 1812 or login: Mikhail, password: 1911 will lead to the 'moderator' path, which contains a greeting: "Hello, [Login name]".
