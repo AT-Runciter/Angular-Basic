@@ -1,0 +1,48 @@
+<p>product-list works!</p>
+
+<p>Реалізоване сортування по кольору, вкказанному в картці товару. Натисніть purple, наприклад.</p>
+
+<label class="color-option">
+  <input type="radio" name="color" (click)="selectedColor = null">
+  All
+</label>
+
+<label class="color-option">
+  <input type="radio" name="color" (click)="selectedColor = 'red'">
+  Red
+</label>
+
+<label class="color-option">
+  <input type="radio" name="color" (click)="selectedColor = 'purple'">
+  Purple
+</label>
+
+<label class="color-option">
+  <input type="radio" name="color" (click)="selectedColor = 'green'">
+  Green
+</label>
+
+
+<div class="product-container">
+  <div class="product-list" *ngIf="selectedColor !== null">
+    <div *ngFor="let product of products">
+      <div class="product-item" *ngIf="product.color === selectedColor">
+        <img src="assets/n1.png" alt="n">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Color: {{ product.color }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-list" *ngIf="selectedColor === null">
+    <div *ngFor="let product of products">
+      <div class="product-item">
+        <img src="assets/n1.png" alt="n">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Color: {{ product.color }}</p>
+      </div>
+    </div>
+  </div>
+</div>

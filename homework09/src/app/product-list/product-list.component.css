@@ -1,0 +1,80 @@
+/*.filter-container {
+    margin-bottom: 20px;
+  }
+  
+  .filter-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .filter-list li {
+    margin-right: 10px;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .product-item h3 {
+    margin-top: 0;
+  }
+  
+  .product-item p {
+    margin-bottom: 5px;
+  }
+  
+  .product-item p:last-child {
+    margin-bottom: 0;
+  }*/
+
+  .color-option {
+    margin-right: 10px;
+  }
+  
+  .product-list {
+    margin-top: 20px;
+  }
+  
+  .product-item {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /*flex: 0 0 300px;  Змінити width на flex для резинової ширини карток */
+    margin: 10px;
+    
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Додати це для центрування по осі X */
+  }
+  
+  .product-item h3 {
+    margin-top: 0;
+  }
+  
+  .product-item p {
+    margin-bottom: 5px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  
+  

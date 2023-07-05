@@ -1,0 +1,38 @@
+  .about {
+    /*background-color: #f9f9f9;*/
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.about__text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about__link {
+    display: inline-block;
+    background-color: purple;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+
+.about__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

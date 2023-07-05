@@ -1,0 +1,25 @@
+<p>login works!</p>
+
+<div class="component-class">
+
+<div class="container">
+  <form (submit)="onSubmit()">
+    <div>
+      <label for="login-username">Логін: /log1: Микола log2: Федір</label>
+      <input type="text" id="login-username" [(ngModel)]="username" name="username" required placeholder="...почніть вводити логін">
+    </div>
+
+    <div>
+      <label for="login-password">Пароль: /pass1: 1313 pass2: 0505</label>
+      <input type="password" id="login-password" [(ngModel)]="password" name="password" required placeholder="...почніть вводити пароль">
+    </div>
+
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+
+    <button type="submit">Увійти</button>
+  </form>
+</div>
+
+</div>
