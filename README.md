@@ -81,7 +81,7 @@ https://angular-basic-homework08.netlify.app/
 4. Add to the form the display of error messages during its filling. After submitting the data, the form should be automatically cleared to its initial state.
 
 homework09 (routing) - 
-https://angular-basic-homework09.netlify.app/home
+https://angular-basic-homework09.netlify.app/
 
 1. Create two working routes in which the routes array in app.routing-module.ts, which is passed to RouterModule.forRoot, is empty, use additional modules.
 2. Connect lazy boot to one of the routes created in the task above. You can edit the route settings if necessary.
